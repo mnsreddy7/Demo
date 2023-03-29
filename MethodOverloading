@@ -10,6 +10,11 @@ class DisplayOverloading
     int sum = a+b+c;
     return sum;
   }
+  public float add(float a, float b)
+  {
+    float sum = a+b;
+    return sum;
+  }
 }
 class MethodOverloading
 {
@@ -18,5 +23,6 @@ class MethodOverloading
     DisplayOverloading obj = new DisplayOverloading();
     System.out.println(obj.add(10, 20));
     System.out.println(obj.add(10, 20, 30));
+    System.out.println(obj.add(5.5f, 2.5f));
   }
 }
