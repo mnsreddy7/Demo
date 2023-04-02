@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Sports {
+    public static void main(String args[])
+    {
+        ArrayList<String> arrList=new ArrayList<String>();
+
+        arrList.add("Cricket");
+        arrList.add("Hockey");
+        arrList.add("VolleyBall");
+        arrList.add(0, "BasketBall");
+        arrList.add(1, "soccer");
+        System.out.println("ArrayList: ");
+        for(String str:arrList)
+            System.out.println(str);
+    }
+}
