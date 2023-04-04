@@ -1,0 +1,20 @@
+import java.util.*;
+public class StackExample
+
+{
+        public static void main(String args[]){
+            Stack<String> stack = new Stack<String>();
+
+            stack.push("Ram");
+            stack.push("Laswi");
+            stack.push("Hari");
+            stack.pop();
+            stack.push("Eliza");
+            stack.push("Ella");
+            stack.pop();
+            System.out.println("Names in the Stack: ");
+            for(String str: stack){
+                System.out.println(str);
+            }
+        }
+    }
