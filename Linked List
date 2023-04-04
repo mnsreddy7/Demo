@@ -1,0 +1,20 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class Fruits {
+    public static void main(String args[])
+    {
+        LinkedList<String> linkList=new LinkedList<String>();
+        linkList.add("Apple");
+        linkList.add("Orange");
+        linkList.add("Mango");
+        linkList.add(0, "Banana");
+        linkList.add(2, "Grapes");
+        System.out.println("LinkedList elements: ");
+        Iterator<String> it=linkList.iterator();
+        while(it.hasNext())
+        {
+            System.out.println(it.next());
+        }
+    }
+}
