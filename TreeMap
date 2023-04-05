@@ -1,0 +1,21 @@
+import java.util.*;
+public class TreeMapExample {
+
+        public static void main(String args[])
+        {
+            TreeMap<Integer, String> hmap = new TreeMap<>();
+
+            hmap.put(101, "laswi");
+            hmap.put(105, "ram");
+            hmap.put(102, "siri");
+            hmap.put(120, "yash");
+
+            Set set = hmap.entrySet();
+            Iterator iterator = set.iterator();
+            while(iterator.hasNext()) {
+                Map.Entry m = (Map.Entry)iterator.next();
+                System.out.print("key is: "+ m.getKey() + " & Value is: ");
+                System.out.println(m.getValue());
+            }
+        }
+    }
