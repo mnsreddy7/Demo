@@ -1,0 +1,18 @@
+import java.util.*;
+public class HashSetExample {
+    public static void main(String args[]) {
+        HashSet<String> set = new HashSet<String>();
+        set.add("Laswi");
+        set.add("Ram");
+        set.add("siri");
+        set.add("yash");
+        set.add("Becky");
+
+        Iterator<String> it = set.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+
+        }
+    }
+
+}
